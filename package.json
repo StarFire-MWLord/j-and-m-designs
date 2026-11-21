@@ -1,0 +1,11 @@
+{
+  "name": "j-and-m-designs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
