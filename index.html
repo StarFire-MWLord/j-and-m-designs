@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>J & M Designs</title>
+    <meta
+      name="description"
+      content="J & M Designs is currently in development. Made in Wilton, CT."
+    />
+    <meta name="theme-color" content="#fefefe" />
+    <link rel="icon" href="logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fefefe;
+        --ink: #000000;
+      }
+      * { box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      body {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 1.5rem;
+        font-family: "Cormorant Garamond", Palatino, "Palatino Linotype", serif;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: min(36rem, 100%);
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .rule {
+        width: 3rem;
+        height: 1px;
+        background: var(--ink);
+        margin: 2.25rem 0 1.25rem;
+      }
+      p {
+        margin: 0;
+        max-width: 16rem;
+        text-align: center;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        line-height: 1.45;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        main { animation: rise 800ms ease both; }
+      }
+      @keyframes rise {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img src="logo.png" width="982" height="825" alt="J & M Designs, made in Wilton, CT" />
+      <span class="rule" aria-hidden="true"></span>
+      <p>Currently in development</p>
+    </main>
+  </body>
+</html>
